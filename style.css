@@ -30,6 +30,9 @@ img {
   max-width:100%;
 }
 
+
+/* ----------------------------------------------------------  Home page  ------------------------------------------------------------------------------------*/
+
 .wrapper{
 
   background: #000000;
@@ -519,6 +522,260 @@ header nav ul li.active::after {
 }
 
 
+/*---------------------------------------------------   About-us page   ---------------------------------------------------------------------------------------------*/
+
+.wrapper123{
+
+  background: #000000;
+  background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(74, 40, 0, 1) 100%);/* градиент */
+  width: 100%;
+  padding-bottom: 50px;
+
+}
+
+
+.evil-container {
+
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 450px;
+
+}
+
+.evil-container .evil-info .evil-upper{
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.evil-container .evil-info .evil-upper p{
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+.evil-container .evil-info .evil-upper a{
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: #E47500;
+}
+
+.evil-container .evil-info h2{
+
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 170%;
+  width: 450px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  
+
+}
+
+.evil-container .evil-info>p {
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 170%;
+  width: 430px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+
+.evil-container .evil-info .btn{
+
+  width: 195px;
+  height: 53px;
+  color: #FFFFFF;
+  font-size: 16px;
+  background: linear-gradient(180deg,rgba(250, 131, 5, 1) 0%, rgba(251, 158, 60, 1) 100%);
+  border-radius: 30px;
+  padding: 15px auto;
+  border: 0;
+  transition: all 500ms ease; /* плавное увеличение конпки */
+  
+
+}
+
+
+/* плавное увеличение конпки */
+
+.evil-container .evil-info .btn:hover{
+
+  cursor: pointer; /* плавное увеличение конпки */
+  transform: scale(1.1); /* плавное увеличение конпки */
+
+}
+
+.evil-container>img {
+
+  position:absolute;
+  top: 150px;
+  right: 0;
+
+}
+
+.evil-container2{
+
+  padding-bottom: 200px;
+}
+
+.evil-container2 .evil-title{
+
+  padding-left: 50px;
+}
+
+
+
+.evil-container2 .evil-wall {
+  display: flex;
+  gap: 20px;                  /* расстояние между блоками */
+  justify-content: space-between;     /* выравнивание по центру */
+  border-radius: 20px;
+  flex-wrap: wrap;
+  padding-top: 50px;            /* если экран маленький, блоки переносятся */
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.evil-container2 .evil-block {
+  background: #2a1f17;         /* пример цвета фона блока */
+  border-radius: 15px;
+  padding: 80px 50px;
+  width: 450px;     
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;   /* элементы идут сверху вниз */
+  align-items: flex-start;      /* всё по центру по горизонтали */
+  text-align: center;
+
+}
+
+.evil-container2 .evil-block .First{
+
+  background: #1E003C;
+  border-radius: 15px;
+  padding: 10px;
+  width: 140px;
+  font-size: 14px;
+  font-weight: 100;
+
+}
+.evil-container2 .evil-block .Second{
+
+  background: #A0522D;
+  border-radius: 15px;
+  padding: 10px;
+  width: 140px;
+  font-size: 14px;
+  font-weight: 100;
+
+}
+.evil-container2 .evil-block .Third{
+
+  background: #003200;
+  border-radius: 15px;
+  padding: 10px;
+  width: 140px;
+  font-size: 14px;
+  font-weight: 100;
+
+}
+
+.evil-container2 .evil-block>h3{
+
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 30px 0;
+
+
+}
+
+.evil-container2 .evil-block p{
+
+  font-size: 14px;
+  font-weight: 100;
+  width: 304px;
+  margin: 0; /* убирает отступы */
+  line-height: 1.8; /* делает строки ровнее */
+  text-align: left; /* выравнивание по левому краю */
+
+
+}
+
+
+.evil-image{
+
+  background: #2a1f17;
+  display:flex;
+  justify-content: space-between;
+  padding-left: 150px; 
+  padding-right: 200px;
+  padding-top: 100px;
+  margin-bottom: 200px;
+
+}
+
+
+.evil-image .image-info {
+
+  width: 536px;
+  padding-top: 50px;
+
+}
+
+.evil-image .image-info p{
+
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Regular', sans-serif;
+  line-height: 202.5%;
+
+
+}
+
+
+.evil-image .image-info h1{
+
+  width: 531px;
+  margin-bottom: 30px;
+
+}
+
+.kind-box{
+
+  padding-left: 100px;
+}
+
+.kind-box h2{
+
+  margin-bottom: 100px;
+}
+
+
+.kind-box .evil-box{
+  display: flex;
+  justify-content: space-between;     /* элементы внутри идут сверху вниз */
+  align-items: center;        /* центрирование внутри блока */
+  text-align: center;         /* центрирование текста */
+  padding-right: 100px;
+}
+
+
+
+/*----------------------------------------------------  Footer  ------------------------------------------------------------------------------------------------------*/
 footer{
 
   background: #070707;
