@@ -7,13 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  <script src="script/main.js"></script>
 </head>
 
 <body>
   <div class="wrapper"> <!-- Градиент -->
     <header class="container">
 
-      <span class="logo"> logo </span>
+      <div class="eyes">
+        <button class="menu-btn">☰</button> <!-- кнопка гамбургер -->
+        <span class="logo"> logo </span>
+      </div>
 
       <nav>
         <ul>
@@ -58,7 +62,7 @@
           <span><img src="img/fire1.png" alt="game1.png">40 Followers</span>
         </div>
       </div>
-
+      <a href="#" class="see-all-below">SEE ALL</a>
     </div>
 
     <div class="container-text">
@@ -79,36 +83,39 @@
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s,</p>
     </div>
+    <div class = "shadow-container">
+      <h3 class = "shadow-text">Our platforms</h3>
+    </div>
     <div class="images-container">
       <div class="block">
         <img src="img/one.png" alt="">
-        <p>Mobile Game Development</p>
-        <img src="img/arrow.png" alt="">
+        <p>Mobile Game Development</p> <span class= "shadow-page">Mobile Dev</span>
+        <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/two.png" alt="">
-        <p>PC Game Development</p>
-        <img src="img/arrow.png" alt="">
+        <p>PC Game Development</p> <span class= "shadow-page">PC Game Dev</span>
+        <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/three.png" alt="">
-        <p>PS4 Game Development</p>
-        <img src="img/arrow.png" alt="">
+        <p>PS4 Game Development</p> <span class= "shadow-page">PS4 Game Dev</span>
+        <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/four.png" alt="">
-        <p>AR/VR Solutions</p>
-        <img src="img/arrow.png" alt="">
+        <p>AR/VR Solutions</p> <span class= "shadow-page">AR/VR Solutionsv</span>
+        <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/five.png" alt="">
-        <p>AR/ VR design</p>
-        <img src="img/arrow.png" alt="">
+        <p>AR/ VR design</p> <span class= "shadow-page">AR/ VR design</span>
+        <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/six.png" alt="">
-        <p>3D Modelings</p>
-        <img src="img/arrow.png" alt="">
+        <p>3D Modelings</p> <span class= "shadow-page">3D Modelings</span>
+        <img class="arrow" src="img/arrow.png" alt="">
       </div>
     </div>
   </div>
@@ -132,18 +139,20 @@
 
 
     <div class="lower-info">
-      <h1>Lorem Ipsum</h1>
+      <h1>Lorem Ipsum</h1> <h3>Stay in the loop</h3>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <input id = "EmailField" type="email" placeholder="Enter email address">
+      <button onclick="CheckEmail()" type="submit">Continue</button>
     </div>
     <div class="lower-container">
       <div class="lower-text">
         <h1>Stay in the loop</h1>
         <p>Subscribe to receive the latest news and updates about TDA.
-          We promise not to spam you! </p>
+          We promise not to spam you! </p>  
       </div>
       <div class="email-container">
-        <input type="email" placeholder="Enter email address">
-        <button>Continue</button>
+        <input id = "EmailField" type="email" placeholder="Enter email address">
+        <button onclick="CheckEmail()" type="submit">Continue</button>
       </div>
     </div>
   </div>
@@ -152,8 +161,8 @@
     <div class="foot-container">
       <div class="logo">
         <h1>LOGO</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-        <p>@Logo</p>
+        <p class="foot-logo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <p class ="dog-logo">@Logo</p>
       </div>
       <div class="about">
         <h4>About us</h4>
@@ -164,7 +173,7 @@
           <li>Contact us</li>
         </ul>
       </div>
-      <div>
+      <div class="logo-contact">
         <h4>Contact us</h4>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
         <p>+908 89097 890</p>

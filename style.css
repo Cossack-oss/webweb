@@ -202,7 +202,8 @@ header nav ul li.active::after {
   font-size: 16px;
   background: linear-gradient(180deg, rgba(250, 131, 5, 1) 0%, rgba(251, 158, 60, 1) 100%);
   border-radius: 30px;
-  padding: 15px auto;
+  padding: 15px 30px;
+  text-align: center;
   border: 0;
   transition: all 500ms ease;
   /* плавное увеличение конпки */
@@ -518,11 +519,11 @@ header nav ul li.active::after {
   outline: none;
   border-radius: 15px;
   background: #FFFFFF;
+  color: #898989;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   padding: 20px 140px 20px 30px;
   /* верх 20px, справа 10px, низ 20px, слева 30px */
-  color: 898989;
   position: relative;
   /* переносим окно под кнопку */
   right: -130px;
@@ -545,7 +546,8 @@ header nav ul li.active::after {
   font-size: 16px;
   background: linear-gradient(180deg, rgba(250, 131, 5, 1) 0%, rgba(251, 158, 60, 1) 100%);
   border-radius: 15px;
-  padding: 15px auto;
+  padding: 5px 3px;
+  text-align: center;
   border: 0;
   transition: all 500ms ease;
   /* плавное увеличение конпки */
@@ -645,7 +647,8 @@ header nav ul li.active::after {
   font-size: 16px;
   background: linear-gradient(180deg, rgba(250, 131, 5, 1) 0%, rgba(251, 158, 60, 1) 100%);
   border-radius: 30px;
-  padding: 15px auto;
+  padding: 15px 10px;
+  text-align: center;
   border: 0;
   transition: all 500ms ease;
   /* плавное увеличение конпки */
@@ -1111,11 +1114,11 @@ footer>p {
   color: #FFFFFF;
   padding: 13px 45px;
   background-color: #DC7000;
+  border-radius: 15px;
+  transition: all 500ms ease;
 }
 
-.platform-content__btn:hover {
-  opacity: 0.5;
-}
+.platform-content__btn:hover {}
 
 .platform-content__mid {
   flex-direction: row-reverse;
@@ -1348,7 +1351,7 @@ footer>p {
 }
 
 .platform-contact__form {
-  background-color: #1B1B1B;
+  background-color: #1C140F;
   padding: 40px 50px 42px 56px;
   border-radius: 15px;
   display: flex;
@@ -1386,8 +1389,18 @@ footer>p {
 .platform-contact__btn {
   padding: 9px 15px;
   background-color: #DC7000;
-  border-radius: 8px
+  border-radius: 15px;
+  transition: all 500ms ease;
 }
+
+.platform-contact__btn:hover {
+  cursor: pointer;
+  /* плавное увеличение конпки */
+  transform: scale(1.1);
+  /* плавное увеличение конпки */
+}
+
+
 
 /* footer */
 
@@ -1868,4 +1881,886 @@ footer>p {
   border-radius: 10px;
   display: block;
   margin-left: auto;
+}
+
+
+
+
+
+
+
+@media(max-width: 1100px) {
+
+
+  .hero-container img {
+
+    display: none;
+  }
+
+
+  .hero-container {
+
+    display: flex;
+    justify-content: center;
+    /* центр по горизонтали */
+    align-items: center;
+    /* центр по вертикали */
+    text-align: center;
+    height: 100vh;
+
+    flex-direction: column;
+    /* все элементы один под другим */
+  }
+
+
+  .hero-container .hero-info .btn {
+
+    display: block;
+    /* превращаем кнопку в блочный элемент */
+    margin: 0 auto;
+    /* автоматические отступы слева и справа */
+
+  }
+
+
+}
+
+.menu-btn {
+
+  display: none;
+  /* скрыта по умолчанию на больших экранах */
+
+}
+
+
+.container-tranding .see-all-below {
+
+  display: none;
+
+}
+
+
+.shadow-text {
+
+  display: none;
+}
+
+.images-container .shadow-page {
+
+  display: none;
+}
+
+/*---------------------------MINUS-----------------------------*/
+.lower-container h3 {
+
+  display: none;
+}
+
+.lower-info input {
+
+  display: none;
+}
+
+/*---------------------------MINUS----------------------------*/
+
+.evil-wall .shadow-block{
+
+  display: none;
+}
+
+.wrapper123>h2{
+
+  display: none;
+}
+
+@media(max-width: 690px) {
+
+
+  /* ------------------------------Габмургер иконка---------------------------------------------------------*/
+  .eyes {
+
+    display: flex;
+    justify-content: center;
+    /* кнопка слева, логотип по центру, можно настроить */
+    align-items: center;
+    padding: 0 10px;
+    /* отступы по бокам */
+
+  }
+
+
+  .eyes .menu-btn {
+
+    display: block;
+    position: absolute;
+    /* чтобы кнопка была слева */
+    font-size: 20px;
+    left: 10px;
+
+
+  }
+
+  .eyes .logo {
+
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    transform: translateX(-20px);
+    /* сдвиг влево */
+
+  }
+
+
+  header span {
+
+    display: block;
+    /* показываем элемент */
+    text-align: center;
+    /* центрируем текст внутри */
+    width: 100%;
+    /* чтобы span занимал всю ширину контейнера */
+    margin: 0 auto;
+    /* дополнительно центрирование блока */
+
+  }
+
+
+  header.container {
+
+    display: flex;
+    flex-direction: column;
+    /* элементы один под другим */
+    align-items: center;
+    /* центр по горизонтали */
+
+  }
+
+  header.container nav {
+
+    display: flex;
+
+  }
+
+  header.container nav ul {
+    display: none;
+    flex-direction: column;
+    /* пункты меню один под другим */
+    align-items: center;
+    /* центр пунктов меню */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+
+  }
+
+  nav ul li a {
+    display: block;
+    /* чтобы ссылка занимала всю ширину */
+    text-align: left;
+    /* текст прижат к левому краю */
+  }
+
+
+  header.container nav ul li {
+
+    margin: 10px 0;
+    /* расстояние между пунктами меню */
+
+  }
+
+
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    /* чтобы блоки шли сверху вниз на маленьком экране */
+    align-items: center;
+    text-align: center;
+
+  }
+
+
+
+  .hero-container .hero-info {
+    max-width: 90%;
+    /* ограничиваем ширину текста */
+    word-wrap: break-word;
+    /* перенос длинных слов */
+  }
+
+
+
+  .hero-container .hero-info h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+
+  .hero-container .hero-info h2 {
+    margin-bottom: 5px;
+  }
+
+
+  .hero-container .hero-info .btn {
+
+    display: block;
+    /* превращаем кнопку в блочный элемент */
+    margin: 0 auto;
+    /* автоматические отступы слева и справа */
+    font-size: 14px;
+    /* размер текста внутри кнопки */
+    width: 150px;
+    /* ширина кнопки */
+    padding: 8px 16px;
+    /* внутренние отступы */
+    transition: all 0.1s ease;
+
+  }
+
+
+  .hero-container .hero-info .btn:active {
+
+    transform: scale(0.98);
+    /* чуть уменьшить кнопку для эффекта "нажатия" */
+
+  }
+
+  /*-----------------------------------See-all-below-----------------------*/
+
+
+  .container-tranding .see-all {
+
+    display: none;
+
+  }
+
+  .container-tranding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* чтобы кнопка была по центру */
+  }
+
+  .games {
+
+    display: flex;
+    gap: 20px;
+    /* расстояние между играми */
+    flex-wrap: wrap;
+    /* если экран маленький — переносить */
+    justify-content: center;
+
+  }
+
+
+
+  .container-tranding .see-all-below {
+
+    display: inline-block;
+    color: #fff;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+  }
+
+
+  .container-tranding h3 {
+
+    font-size: 17px;
+  }
+
+  .container-text {
+
+    width: 100%;
+    max-width: 360px;
+    /* ограничиваем ширину контейнера */
+    text-align: center;
+    /* центрируем текст внутри блока */
+
+  }
+
+  .container-text p {
+
+    margin: 0 auto;
+    /* центрируем блок по горизонтали */
+    font-size: 16px;
+    max-width: 90%;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+    /* современный аналог word-wrap */
+    word-break: break-word;
+    /* для длинных слов без пробелов */
+    white-space: normal;
+    /* разрешаем перенос строк */
+
+  }
+
+
+  .banner {
+
+    width: 100%;
+    max-width: 360px;
+    /* ограничиваем ширину контейнера */
+    background-color: black;
+    border-radius: 15px;
+    margin: 0 auto;
+    /* центрируем по горизонтали */
+    text-align: center;
+    position: relative;
+    top: -30px;
+
+  }
+
+  .banner h3 {
+
+    font-size: 20px;
+    text-align: center;
+    margin-left: -20px;
+    /* сдвигаем весь блок чуть влево */
+    margin-bottom: 15px;
+
+  }
+
+  .banner p {
+
+    max-width: 90%;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+    /* современный аналог word-wrap */
+    word-break: break-word;
+    /* для длинных слов без пробелов */
+    white-space: normal;
+    margin: 0 auto;
+    /* центрирует блок p */
+
+  }
+
+  .banner img {
+
+    display: none;
+  }
+
+
+  .features {
+
+    width: 100%;
+
+
+  }
+
+  .features-container {
+
+    text-align: center;
+    display: none;
+
+  }
+
+  .shadow-container {
+
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .shadow-container .shadow-text {
+
+    display: block;
+    font-size: 24px;
+    width: 100%;
+    margin: 10px auto;
+
+  }
+
+  .features .images-container p {
+
+    display: none;
+  }
+
+
+  .features .images-container span {
+
+    display: block;
+  }
+
+
+  .features .images-container .arrow {
+
+    display: none;
+  }
+
+
+  .images-container {
+
+    display: flex;
+    /* включаем Flexbox */
+    flex-direction: column;
+    /* вертикальное расположение элементов */
+    align-items: center;
+    /* центрирование по горизонтали */
+    justify-content: flex-start;
+    /* элементы сверху, можно менять на center для вертикального центрирования */
+    gap: 10px;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .wrapper2 .info-block {
+
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .wrapper2 .info-block h1 {
+
+    display: block;
+    font-size: 24px;
+    width: 100%;
+    margin: 30px auto;
+
+  }
+
+
+  .wrapper2 .images-block1 {
+
+    display: flex;
+    /* включаем Flexbox */
+    flex-direction: column;
+    /* вертикальное расположение элементов */
+    align-items: center;
+    /* центрирование по горизонтали */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    width: 100%;
+
+  }
+
+  .wrapper2 .images-block2 {
+
+    display: flex;
+    /* включаем Flexbox */
+    flex-direction: column;
+    /* вертикальное расположение элементов */
+    align-items: center;
+    /* центрирование по горизонтали */
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+
+  }
+
+  .lower-info {
+
+    display: flex;
+    justify-content: center;
+    /* по горизонтали */
+    align-items: center;
+    /* по вертикали */
+    width: 100%;
+    margin: 0;
+    padding: 40px 0 40px 0;
+    flex-direction: column;
+    height: 100%;
+    background: #1C140F;
+
+  }
+
+  .lower-info h1 {
+
+    display: none;
+  }
+
+  .lower-info p {
+
+    display: none;
+  }
+
+  .lower-info h3 {
+
+    display: block;
+    font-size: 19px;
+    text-align: center;
+    width: 90%;
+    margin: 0;
+
+  }
+
+  .lower-info input {
+
+    display: block;
+    background-color: #FFFFFF;
+    color: #898989;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 7px;
+    margin-top: 10px;
+  }
+
+
+  .lower-info button {
+
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: linear-gradient(180deg, rgba(250, 131, 5, 1) 0%, rgba(251, 158, 60, 1) 100%);
+    border-radius: 15px;
+    text-align: center;
+    border: 0;
+
+  }
+
+  .lower-info button:active {
+
+    background: linear-gradient(180deg, #d96a03 0%, #e89030 100%);
+    /* чуть темнее */
+    transform: scale(0.95);
+
+  }
+
+
+  .lower-info #EmailField::placeholder {
+
+    text-align: center;
+
+  }
+
+  .wrapper2 .SEE-ALL {
+
+    margin-bottom: 100px;
+  }
+
+
+  .lower-container {
+
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lower-container .email-container {
+
+    display: none;
+
+  }
+
+
+
+  .lower-container .lower-text {
+
+    display: none;
+    background: none;
+  }
+
+
+  .lower-container button {
+
+    display: none;
+  }
+
+
+
+  .foot-container {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .foot-container .logo h1 {
+
+    text-align: center;
+  }
+
+
+  .foot-container .logo .foot-logo {
+
+    text-align: center;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-top: 10px;
+    white-space: normal;
+    /* разрешаем перенос строк */
+    word-wrap: break-word;
+    /* перенос длинных слов при необходимости */
+    overflow-wrap: break-word;
+    /* поддержка в новых браузерах */
+  }
+
+  .foot-container .logo .dog-logo {
+
+    display: none;
+  }
+
+  .foot-container .about h4 {
+
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 50px auto;
+    margin-bottom: 100px;
+  }
+
+  ul li {
+    margin: 0 10px;
+  }
+
+  /* сдвигаем третьий элемент и последующие вправо */
+  ul li:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .foot-container .logo-contact h4{
+
+    text-align: center;
+  }
+
+  .foot-container .logo-contact p{
+
+    text-align: center;
+    font-size: 15px;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* разрешаем перенос строк */
+    word-wrap: break-word;
+    /* перенос длинных слов при необходимости */
+    overflow-wrap: break-word;
+    /* поддержка в новых браузерах */
+  }
+
+
+
+  /*--------------------------------------------------------*/
+                              /*About-us*/
+  /*--------------------------------------------------------*/
+
+
+  .evil-container{
+
+    position: relative;
+    top: -50px;
+  }
+  .evil-container .evil-info .evil-upper{
+
+    display: none;
+  }
+  
+
+  .evil-container img{
+
+    display: none;
+  }
+
+  .evil-container .evil-info{
+
+  display: flex;
+  flex-direction: column; /* элементы сверху вниз */
+  justify-content: center; /* по вертикали */
+  align-items: center;     /* по горизонтали */
+  min-height: 100vh;       /* блок растягивается на всю высоту экрана */
+  text-align: center;      /* текст по центру */
+  padding: 20px;           /* отступы для адаптива */
+  box-sizing: border-box; 
+
+  }
+
+  .evil-container .evil-info h2{
+
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 100%;       /* занимает всю ширину экрана */
+    word-wrap: break-word; /* перенос длинных слов */
+    margin: 10px auto;
+  }
+
+  .evil-container .evil-info p{
+
+    max-width: 100%;       /* занимает всю ширину экрана */
+    word-wrap: break-word; /* перенос длинных слов */
+    margin: 10px auto;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+
+  .evil-container .evil-info .btn {
+
+    display: block;
+    /* превращаем кнопку в блочный элемент */
+    margin: 0 auto;
+    /* автоматические отступы слева и справа */
+    font-size: 14px;
+    /* размер текста внутри кнопки */
+    width: 150px;
+    /* ширина кнопки */
+    padding: 8px 16px;
+    /* внутренние отступы */
+    transition: all 0.1s ease;
+
+  }
+
+
+  .evil-container .evil-info .btn:active {
+
+    transform: scale(0.98);
+    /* чуть уменьшить кнопку для эффекта "нажатия" */
+
+  }
+
+  .evil-container2 .evil-title {
+
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .evil-container2 .evil-title h2{
+
+    max-width: 100%;       /* занимает всю ширину экрана */
+    word-wrap: break-word; /* перенос длинных слов */
+    margin: 10px auto;
+    padding: 0;
+  }
+
+  .evil-wall {
+
+    display: flex;
+    flex-direction: column; /* по умолчанию в колонку */
+    align-items: flex-start; /* центрирует по горизонтали */
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .evil-wall .evil-block{
+
+    display: none;
+  }
+
+  .evil-wall .shadow-block{
+
+    display: block;
+    background-color: #2a1f17;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+
+  }
+
+  .evil-wall .shadow-block h3{
+
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .evil-wall .shadow-block p{
+
+    font-size: 16px;
+  }
+
+  .evil-image {
+   
+    display: flex;
+    text-align: center;       /* текст по центру */
+    flex-direction: column;   /* текст в колонку */
+    align-items: center;      /* горизонтальное центрирование */
+    padding: 0;
+    margin: 0 0 160px 0;
+  }
+
+  .evil-image img{
+
+    display: none;
+  }
+
+
+  .evil-image .image-info{
+
+    width: 90%;               /* ширина блока относительно экрана */
+    max-width: 800px;         /* максимальная ширина для больших экранов */
+    box-sizing: border-box;   /* учитывает padding в ширине */
+    text-align: center;       /* текст по центру */
+  }
+
+  .evil-image .image-info p{
+
+    word-wrap: break-word;               /* перенос длинных слов */
+    font-size: clamp(16px, 2vw, 24px);
+  }
+
+  .evil-image h1{
+
+    display: none;
+    
+  }
+
+  .kind-box{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+  }
+
+
+  .wrapper123>h2{
+
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .kind-box h2 {
+
+    display: none;
+
+  }
+
+
+  .kind-box .evil-box{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* по центру по вертикали (если есть высота) */
+    gap: 30px;               /* расстояние между элементами */
+  }
+
+  .kind-box .evil-box .box{
+
+    display: block;          /* картинка как блочный элемент */
+    margin: 0 auto;          /* центрируем внутри box */
+    min-width: 200px;
+  }
+
+
+
+
+
+
+
 }
