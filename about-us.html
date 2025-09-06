@@ -11,24 +11,29 @@
 
 <body>
   <div class="wrapper123"> <!-- Градиент -->
-    <header class="container">
+    <header class="container header__container">
+      <div class="_container header-container">
+        <span class="logo"> logo </span>
 
-      <span class="logo"> logo </span>
+        <nav class="nav">
+          <ul class="header__list">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">About us</a></li>
+            <li><a href=" portfolio.html">Portfolio</a></li>
+            <li><a href="news.html">News</a></li>
+            <li class="btn"><a href="contact-us.html">Contacts</a></li>
+          </ul>
+        </nav>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="#">About us</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="news.html">News</a></li>
-          <li class="btn"><a href="contact-us.html">Contacts</a></li>
-        </ul>
-      </nav>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
     </header>
 
 
 
-    <div class="evil-container">
+    <div class="evil-container _container">
       <div class="evil-info">
         <div class="evil-upper">
           <p>Home</p><span> > </span> <a href="#">About us</a>
@@ -74,14 +79,16 @@
 
     </div>
 
-    <div class="evil-image">
-      <img src="img/Clark.png" alt="">
-      <div class="image-info">
-        <p>Lorem ipsum</p>
-        <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-          type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+    <div class="evil-image ">
+      <div class="_container">
+        <img class="evil-image__img" src="img/Clark.png" alt="">
+        <div class="image-info">
+          <p>Lorem ipsum</p>
+          <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        </div>
       </div>
     </div>
 
@@ -103,51 +110,90 @@
       </div>
     </div>
 
-    <div class="lower-info">
-      <h1>Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-    </div>
-    <div class="lower-container">
-      <div class="lower-text">
-        <h1>Stay in the loop</h1>
-        <p>Subscribe to receive the latest news and updates about TDA.
-          We promise not to spam you! </p>
+    <div class="platform-contact about-us__contact">
+      <div class="_container">
+        <h2 class="platform-contact__title">Lorem Ipsum</h2>
+        <p class="platform-contact__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="platform-contact__form">
+          <div class="platform-contact__content">
+            <h3 class="platform-contact__content-title">Stay in the loop</h3>
+            <p class="platform-contact__content-text">
+              Subscribe to receive the latest news and updates about TDA. <br>
+              We promise not to spam you!
+            </p>
+          </div>
+          <form action="" class="platform-contact__send">
+            <input class="platform-contact__input" type="email" placeholder="Enter email address">
+            <button class="platform-contact__btn" type="submit">Continue</button>
+          </form>
+        </div>
       </div>
-      <div class="email-container">
-        <input type="email" placeholder="Enter email address">
-        <button>Continue</button>
-      </div>
     </div>
+
+
   </div>
 
-  <footer>
-    <div class="foot-container">
-      <div class="logo">
-        <h1>LOGO</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-        <p>@Logo</p>
-      </div>
-      <div class="about">
-        <h4>About us</h4>
-        <ul>
-          <li>Zeux</li>
-          <li>Portfolio</li>
-          <li>Careers</li>
-          <li>Contact us</li>
+  <footer class="platform-footer">
+    <div class="_container">
+      <div class="platform-footer__content">
+        <div class="platform-footer__left">
+          <a href="#" class="platform-footer__logo">LOGO</a>
+          <p class="platform-footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <div class="platform-footerquote">@Lorem</div>
+        </div>
+
+        <div class="platform-footer__about">
+          <a href="#" class="platform-footer__title">About us</a>
+          <ul class="platform-footer__list">
+            <li class="platform-footer__item">
+              <a href="#" class="platform-footer__item__link">Zeux</a>
+            </li>
+            <li class="platform-footer__item">
+              <a href="#" class="platform-footer__item__link">Portfolio</a>
+            </li>
+            <li class="platform-footer__item">
+              <a href="#" class="platform-footer__item__link">Careers</a>
+            </li>
+            <li class="platform-footer__item">
+              <a href="#" class="platform-footer__item__link">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="platform-footer__contact">
+          <a href="contact-us.html" class="platform-footer__title">Contact us</a>
+          <p class="platform-footer__text platform-footer__contact-text">Lorem Ipsum is simply dummy text of the
+            printing
+            and typesetting industry.</p>
+          <a href="#" class="platform-footer__num">+908 89097 890</a>
+        </div>
+
+
+        <ul class="platform-footer__links">
+          <li class="platform-footer__links-item">
+            <a href="#" class="platform-footer__link"><img src="img/facebook.svg" alt="facebook"></a>
+          </li>
+          <li class="platform-footer__links-item">
+            <a href="#" class="platform-footer__link"><img src="img/insta.svg" alt="instagram"></a>
+          </li>
+          <li class="platform-footer__links-item">
+            <a href="#" class="platform-footer__link facebook"><img src="img/twitter.svg" alt="twitter"></a>
+          </li>
+          <li class="platform-footer__links-item">
+            <a href="#" class="platform-footer__link"><img src="img/linkedin.svg" alt="linkedin"></a>
+          </li>
         </ul>
       </div>
-      <div>
-        <h4>Contact us</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-        <p>+908 89097 890</p>
-      </div>
+
     </div>
 
-    <hr>
-    <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+    <div class="platform-footer__copyr">
+      Copyright � 2021 Lorem All rights Rcerved
+    </div>
   </footer>
 
-
+  <script src="script/main.js"></script>
 </body>
 
 </html>
