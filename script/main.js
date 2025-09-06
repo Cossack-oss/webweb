@@ -1,25 +1,3 @@
-new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 30,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
 
 
 
@@ -42,9 +20,15 @@ function CheckEmail() {
 
     alert('Ваш email отправлен!');
 
-    
+
   }
-  
+
 }
 
+
+document.querySelector('.burger').addEventListener('click', function () {
+  this.classList.toggle('active');
+  document.querySelector(".nav").classList.toggle("open")
+  document.querySelector('html').classList.toggle("active")
+})
 

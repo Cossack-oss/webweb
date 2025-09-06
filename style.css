@@ -20,6 +20,7 @@ body {
   color: #fff;
 }
 
+
 a {
   display: block;
   text-decoration: none;
@@ -47,6 +48,15 @@ button {
 img {
 
   max-width: 100%;
+}
+
+
+._container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 
@@ -147,6 +157,13 @@ header nav ul li.active::after {
   right: 15px;
   /* сдвиг вправо */
 
+}
+
+.nav {
+  float: right;
+  width: 50%;
+  z-index: 2;
+  position: relative;
 }
 
 .hero-container {
@@ -1160,17 +1177,12 @@ footer>p {
 }
 
 .platform-review__list {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 60px;
-  gap: 10px;
 }
 
 
 .platform-review__item {
-  max-width: 400px;
-  width: 100%;
-
+  box-sizing: border-box;
   border-radius: 10px;
   border: 2px solid #DDDDDD;
   transition: border 0.3s ease;
@@ -1963,112 +1975,17 @@ footer>p {
 
 /*---------------------------MINUS----------------------------*/
 
-.evil-wall .shadow-block{
+.evil-wall .shadow-block {
 
   display: none;
 }
 
-.wrapper123>h2{
+.wrapper123>h2 {
 
   display: none;
 }
 
 @media(max-width: 690px) {
-
-
-  /* ------------------------------Габмургер иконка---------------------------------------------------------*/
-  .eyes {
-
-    display: flex;
-    justify-content: center;
-    /* кнопка слева, логотип по центру, можно настроить */
-    align-items: center;
-    padding: 0 10px;
-    /* отступы по бокам */
-
-  }
-
-
-  .eyes .menu-btn {
-
-    display: block;
-    position: absolute;
-    /* чтобы кнопка была слева */
-    font-size: 20px;
-    left: 10px;
-
-
-  }
-
-  .eyes .logo {
-
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    transform: translateX(-20px);
-    /* сдвиг влево */
-
-  }
-
-
-  header span {
-
-    display: block;
-    /* показываем элемент */
-    text-align: center;
-    /* центрируем текст внутри */
-    width: 100%;
-    /* чтобы span занимал всю ширину контейнера */
-    margin: 0 auto;
-    /* дополнительно центрирование блока */
-
-  }
-
-
-  header.container {
-
-    display: flex;
-    flex-direction: column;
-    /* элементы один под другим */
-    align-items: center;
-    /* центр по горизонтали */
-
-  }
-
-  header.container nav {
-
-    display: flex;
-
-  }
-
-  header.container nav ul {
-    display: none;
-    flex-direction: column;
-    /* пункты меню один под другим */
-    align-items: center;
-    /* центр пунктов меню */
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: left;
-
-  }
-
-  nav ul li a {
-    display: block;
-    /* чтобы ссылка занимала всю ширину */
-    text-align: left;
-    /* текст прижат к левому краю */
-  }
-
-
-  header.container nav ul li {
-
-    margin: 10px 0;
-    /* расстояние между пунктами меню */
-
-  }
-
 
 
   .hero-container {
@@ -2527,12 +2444,12 @@ footer>p {
     margin-left: auto;
   }
 
-  .foot-container .logo-contact h4{
+  .foot-container .logo-contact h4 {
 
     text-align: center;
   }
 
-  .foot-container .logo-contact p{
+  .foot-container .logo-contact p {
 
     text-align: center;
     font-size: 15px;
@@ -2550,52 +2467,63 @@ footer>p {
 
 
   /*--------------------------------------------------------*/
-                              /*About-us*/
+  /*About-us*/
   /*--------------------------------------------------------*/
 
 
-  .evil-container{
+  .evil-container {
 
     position: relative;
     top: -50px;
   }
-  .evil-container .evil-info .evil-upper{
 
-    display: none;
-  }
-  
-
-  .evil-container img{
+  .evil-container .evil-info .evil-upper {
 
     display: none;
   }
 
-  .evil-container .evil-info{
 
-  display: flex;
-  flex-direction: column; /* элементы сверху вниз */
-  justify-content: center; /* по вертикали */
-  align-items: center;     /* по горизонтали */
-  min-height: 100vh;       /* блок растягивается на всю высоту экрана */
-  text-align: center;      /* текст по центру */
-  padding: 20px;           /* отступы для адаптива */
-  box-sizing: border-box; 
+  .evil-container img {
+
+    display: none;
+  }
+
+  .evil-container .evil-info {
+
+    display: flex;
+    flex-direction: column;
+    /* элементы сверху вниз */
+    justify-content: center;
+    /* по вертикали */
+    align-items: center;
+    /* по горизонтали */
+    min-height: 100vh;
+    /* блок растягивается на всю высоту экрана */
+    text-align: center;
+    /* текст по центру */
+    padding: 20px;
+    /* отступы для адаптива */
+    box-sizing: border-box;
 
   }
 
-  .evil-container .evil-info h2{
+  .evil-container .evil-info h2 {
 
     font-size: 24px;
     line-height: 1.5;
-    max-width: 100%;       /* занимает всю ширину экрана */
-    word-wrap: break-word; /* перенос длинных слов */
+    max-width: 100%;
+    /* занимает всю ширину экрана */
+    word-wrap: break-word;
+    /* перенос длинных слов */
     margin: 10px auto;
   }
 
-  .evil-container .evil-info p{
+  .evil-container .evil-info p {
 
-    max-width: 100%;       /* занимает всю ширину экрана */
-    word-wrap: break-word; /* перенос длинных слов */
+    max-width: 100%;
+    /* занимает всю ширину экрана */
+    word-wrap: break-word;
+    /* перенос длинных слов */
     margin: 10px auto;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -2634,10 +2562,12 @@ footer>p {
 
   }
 
-  .evil-container2 .evil-title h2{
+  .evil-container2 .evil-title h2 {
 
-    max-width: 100%;       /* занимает всю ширину экрана */
-    word-wrap: break-word; /* перенос длинных слов */
+    max-width: 100%;
+    /* занимает всю ширину экрана */
+    word-wrap: break-word;
+    /* перенос длинных слов */
     margin: 10px auto;
     padding: 0;
   }
@@ -2645,19 +2575,21 @@ footer>p {
   .evil-wall {
 
     display: flex;
-    flex-direction: column; /* по умолчанию в колонку */
-    align-items: flex-start; /* центрирует по горизонтали */
+    flex-direction: column;
+    /* по умолчанию в колонку */
+    align-items: flex-start;
+    /* центрирует по горизонтали */
     gap: 50px;
     padding: 0;
     margin: 0;
   }
 
-  .evil-wall .evil-block{
+  .evil-wall .evil-block {
 
     display: none;
   }
 
-  .evil-wall .shadow-block{
+  .evil-wall .shadow-block {
 
     display: block;
     background-color: #2a1f17;
@@ -2668,54 +2600,62 @@ footer>p {
 
   }
 
-  .evil-wall .shadow-block h3{
+  .evil-wall .shadow-block h3 {
 
     margin-bottom: 15px;
     font-size: 20px;
   }
 
-  .evil-wall .shadow-block p{
+  .evil-wall .shadow-block p {
 
     font-size: 16px;
   }
 
   .evil-image {
-   
+
     display: flex;
-    text-align: center;       /* текст по центру */
-    flex-direction: column;   /* текст в колонку */
-    align-items: center;      /* горизонтальное центрирование */
+    text-align: center;
+    /* текст по центру */
+    flex-direction: column;
+    /* текст в колонку */
+    align-items: center;
+    /* горизонтальное центрирование */
     padding: 0;
     margin: 0 0 160px 0;
   }
 
-  .evil-image img{
+  .evil-image img {
 
     display: none;
   }
 
 
-  .evil-image .image-info{
+  .evil-image .image-info {
 
-    width: 90%;               /* ширина блока относительно экрана */
-    max-width: 800px;         /* максимальная ширина для больших экранов */
-    box-sizing: border-box;   /* учитывает padding в ширине */
-    text-align: center;       /* текст по центру */
+    width: 90%;
+    /* ширина блока относительно экрана */
+    max-width: 800px;
+    /* максимальная ширина для больших экранов */
+    box-sizing: border-box;
+    /* учитывает padding в ширине */
+    text-align: center;
+    /* текст по центру */
   }
 
-  .evil-image .image-info p{
+  .evil-image .image-info p {
 
-    word-wrap: break-word;               /* перенос длинных слов */
+    word-wrap: break-word;
+    /* перенос длинных слов */
     font-size: clamp(16px, 2vw, 24px);
   }
 
-  .evil-image h1{
+  .evil-image h1 {
 
     display: none;
-    
+
   }
 
-  .kind-box{
+  .kind-box {
 
     display: flex;
     flex-direction: column;
@@ -2727,7 +2667,7 @@ footer>p {
   }
 
 
-  .wrapper123>h2{
+  .wrapper123>h2 {
 
     display: block;
     text-align: center;
@@ -2742,18 +2682,22 @@ footer>p {
   }
 
 
-  .kind-box .evil-box{
+  .kind-box .evil-box {
 
     display: flex;
     flex-direction: column;
-    align-items: center;     /* по центру по вертикали (если есть высота) */
-    gap: 30px;               /* расстояние между элементами */
+    align-items: center;
+    /* по центру по вертикали (если есть высота) */
+    gap: 30px;
+    /* расстояние между элементами */
   }
 
-  .kind-box .evil-box .box{
+  .kind-box .evil-box .box {
 
-    display: block;          /* картинка как блочный элемент */
-    margin: 0 auto;          /* центрируем внутри box */
+    display: block;
+    /* картинка как блочный элемент */
+    margin: 0 auto;
+    /* центрируем внутри box */
     min-width: 200px;
   }
 
@@ -2763,4 +2707,682 @@ footer>p {
 
 
 
+}
+
+
+
+/* ============================================================================== */
+/* ADAPTIVE */
+/* ============================================================================== */
+
+@media (max-width: 800px) {
+  .hero__text {
+    font-size: 24px;
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
+  }
+
+  .hero__up {
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  .platform-hero__title-down {
+    font-size: 20px;
+  }
+
+  .platform-hero__text-down {
+    font-size: 12px;
+  }
+
+  .platform-hero__list-item {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .platform-hero {
+    padding-bottom: 40px;
+  }
+
+  .platform-content__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .platform-content__text {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .platform-content__text span {
+    margin-top: 10px;
+  }
+
+  .platform-content__section {
+    gap: 20px !important;
+  }
+
+  .platform-content__btn {
+    font-size: 10px;
+    padding: 10px 25px;
+  }
+
+
+  .platform-content__section {
+    padding-bottom: 40px;
+  }
+
+  .platform-content__section:last-child {
+    padding-bottom: 0;
+  }
+
+  .platform-content {
+    padding-bottom: 40px;
+  }
+
+  .platform-review {
+    padding: 20px 0 20px 0;
+  }
+
+  .platform-review__title {
+    font-size: 20px;
+    margin: 0 auto 10px auto;
+  }
+
+  .platform-review__subtitle {
+    font-size: 12px;
+    margin: 0 auto 20px auto;
+  }
+
+  .platform-review__name {
+    font-size: 15px;
+
+  }
+
+  .platform-review__loc {
+    font-size: 12px;
+  }
+
+  .platform-review__text {
+    font-size: 12px;
+  }
+
+  .platform-review__pag {
+    display: none;
+  }
+
+  .platform-review__list {
+    margin-bottom: 20px;
+  }
+
+  .platform-contact {
+    padding: 40px 0;
+  }
+
+  .platform-contact__container {
+    text-align: center;
+  }
+
+  .platform-contact__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .platform-contact__text {
+    font-size: 12px;
+    margin: 0 auto 20px auto;
+  }
+
+  .platform-contact__form {
+    flex-direction: column;
+  }
+
+  .platform-contact__content-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .platform-contact__content-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .platform-contact__form {
+    border-radius: 0;
+    padding: 10px 20px;
+  }
+
+  .platform-contact__input::placeholder {
+    font-size: 12px;
+  }
+
+  .platform-footer {
+    padding-top: 20px;
+  }
+
+  .platform-footer__content {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .platform-footer__left {
+    display: none;
+
+  }
+
+  .platform-footer__contact {
+    display: none;
+  }
+
+  .platform-footer__about {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-info h2 {
+    font-size: 16px;
+  }
+
+  .hero-info h1 {
+    font-size: 24px;
+  }
+
+  .hero-info p {
+    margin: 20px;
+  }
+
+  .hero-info .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero-info {
+    height: 300px;
+    padding-top: 20px;
+  }
+
+  .container-tranding .see-all {
+    font-size: 15px;
+  }
+
+  .container-tranding h3 {
+    font-size: 24px;
+  }
+
+  .container-text {
+    padding: 20px 0;
+    font-size: 24px;
+  }
+
+  .banner h3 {
+    font-size: 20px;
+    margin-top: 20px;
+
+  }
+
+  .banner img {
+    margin-bottom: 40px;
+  }
+
+  .features-container h1 {
+
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .features-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+
+  .features .images-container .block {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .images-block2 {
+    display: none;
+  }
+
+  .evil-container .evil-info .evil-upper {
+    margin-bottom: 20px;
+  }
+
+  .evil-container .evil-info h2 {
+    font-size: 24px;
+  }
+
+  .evil-container {
+    padding-bottom: 70px !important;
+  }
+
+  .evil-image__img {
+    padding: 0 50px !important;
+  }
+
+  .evil-container2 {
+    padding: 0 10px 40px 10px;
+  }
+
+  .evil-image .image-info h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .evil-image {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .hero__info {
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .hero__item::after {
+    display: none;
+
+  }
+
+  .hero__item {
+    background-color: #1C140F;
+    width: 85%;
+    border-radius: 10px;
+  }
+
+  .news-hero {
+    padding-bottom: 40px;
+  }
+
+  .news-info__container {
+    flex-direction: column;
+  }
+
+  .news-info__btn {
+    font-size: 12px;
+  }
+
+  .news-info__dur {
+    font-size: 12px;
+  }
+
+
+
+  .news-info__enter {
+    margin-bottom: 10px;
+  }
+
+  .news-info__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .news-info__text {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .news-info__text span {
+    margin-top: 10px;
+  }
+
+  .news-info__content1 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .news-info__left {
+    margin-bottom: 40px;
+  }
+
+  .news-info__item-btn {
+    font-size: 12px;
+    margin-right: 10px;
+    padding: 10px 15px;
+  }
+
+  .news-info__item-dur {
+    font-size: 12px;
+  }
+
+  .news-info__item-enter {
+    margin-bottom: 15px;
+  }
+
+  .news-info__item-text {
+    font-size: 17px;
+  }
+
+  .news-info {
+    padding-bottom: 40px;
+  }
+
+  .contact-hero {
+    padding-bottom: 40px;
+  }
+
+  .contact-hero__num,
+  .contact-hero__loc-text {
+    font-size: 14px;
+  }
+
+  .contact-feedback__title {
+    font-size: 20px;
+  }
+
+  .contact-feedback__subtitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .contact-feedback__fullName {
+    flex-direction: column;
+  }
+
+  .contact-feedback::before,
+  .contact-feedback::after {
+    display: none;
+  }
+
+  .news-info__item {
+    flex-direction: column;
+  }
+
+  .news-info__item-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .news-info__item-enter {
+    justify-content: center;
+  }
+
+  .news-hero__form {
+    box-sizing: border-box;
+  }
+
+  .news-info__item-text {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1170px) {
+  .platform-hero__down {
+    flex-direction: column;
+  }
+
+  .platform-hero__video {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .platform-hero__content {
+    text-align: center;
+  }
+
+  .platform-content__section {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+
+  .platform-content__caption {
+    text-align: center;
+  }
+
+  .hero-container img {
+    display: none;
+  }
+
+  .hero-info {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-info .btn {
+    margin: 0 auto;
+  }
+
+  .games {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .evil-container>img {
+    display: none;
+  }
+
+  .evil-info {
+    text-align: center;
+  }
+
+  .evil-container .evil-info .evil-upper {
+    justify-content: center;
+  }
+
+  .evil-container .evil-info h2 {
+    margin: 0 auto 20px auto;
+  }
+
+  .evil-container .evil-info>p {
+    margin: 0 auto 20px auto;
+  }
+
+  .evil-container .evil-info .btn {
+    margin: 0 auto;
+  }
+
+  .evil-container {
+    padding-bottom: 100px;
+  }
+
+  .evil-container2 .evil-wall {
+    justify-content: space-around;
+  }
+
+  .evil-image ._container {
+    flex-direction: column;
+  }
+
+  .evil-image__img {
+    padding: 0 150px;
+  }
+
+  .kind-box .evil-box {
+    gap: 20px;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1300px) {
+
+  .platform-contact__content {
+    margin-right: 10px;
+  }
+
+  .news-info__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+
+  .news-info__left {
+    margin: 0 auto;
+  }
+
+  .news-info__right {
+    margin: 0 auto;
+  }
+
+  .platform-review__slider {
+    padding: 0 10px;
+
+
+  }
+
+  .contact-hero__info {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .contact-hero__soc::after {
+    display: none;
+
+  }
+
+  .contact-hero__soc {
+    text-align: center;
+  }
+
+  .contact-hero__list {
+    margin: 0 auto;
+  }
+
+  .contact-hero__call::after {
+    display: none;
+  }
+
+  .contact-hero__call {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .contact-hero__loc {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .contact-hero__loc-text,
+  .contact-hero__loc-img {
+    margin: 0 auto;
+  }
+
+
+}
+
+
+/* burger menu */
+
+.open {
+  display: flex !important;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 18px;
+}
+
+
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  background-color: #fff;
+  transform: scale(1);
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+@media (max-width: 900px) {
+
+
+  html.active {
+
+    overflow: hidden !important;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .burger.active body {
+    overflow: hidden;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 100px 40px;
+    background-color: #000;
+    animation: burgerAnimation 0.4s;
+    box-sizing: border-box;
+  }
+
+  .header__list {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }

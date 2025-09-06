@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>News</title>
@@ -10,45 +11,53 @@
 
 <body class="news">
   <header class="container header__container">
-    <span class="logo"> logo </span>
+    <div class="_container header-container">
+      <span class="logo"> logo </span>
 
-    <nav>
-      <ul class="header__list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About us</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li class="active"><a href="#">News</a></li>
-        <li class="btn"><a href="contact-us.html">Contacts</a></li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul class="header__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="active"><a href="#">News</a></li>
+          <li class="btn"><a href="contact-us.html">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
   </header>
 
   <div class="news__main">
 
     <div class="news-hero ">
-      <div class="news-hero__up hero__up">
-        <h2 class="hero__title"><span class="platform-hero__title-wh">Home</span>> <span
-            class="hero__title-org">Services</span></h2>
-        <p class="hero__text">
-          Lorem Ipsum is simply dummy text of the printing and.
-        </p>
-        <div class="news-hero__subtitle hero__subtitle">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      <div class="_container">
+        <div class="news-hero__up hero__up">
+          <h2 class="hero__title"><span class="platform-hero__title-wh">Home</span>> <span
+              class="hero__title-org">Services</span></h2>
+          <p class="hero__text">
+            Lorem Ipsum is simply dummy text of the printing and.
+          </p>
+          <div class="news-hero__subtitle hero__subtitle">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </div>
+
+
         </div>
 
-
-      </div>
-
-      <div class="news-hero__down">
-        <form action="" class="news-hero__form">
-          <button class="news-hero__btn" type="submit"><img src="img/search.svg" alt=""></button>
-          <input type="text" placeholder="Search" class="news-hero__input">
-        </form>
+        <div class="news-hero__down">
+          <form action="" class="news-hero__form">
+            <button class="news-hero__btn" type="submit"><img src="img/search.svg" alt=""></button>
+            <input type="text" placeholder="Search" class="news-hero__input">
+          </form>
+        </div>
       </div>
     </div>
 
     <div class="news-info">
-      <div class="news-info__container">
+      <div class="news-info__container _container">
         <div class="news-info__left">
           <div class="news-info__content1">
             <img class="news-info__img" src="img/news-img1.png" alt="">
@@ -179,7 +188,7 @@
     </div>
 
     <div class="platform-contact">
-      <div class="platform-contact__container">
+      <div class="_container">
         <h2 class="platform-contact__title">Lorem Ipsum</h2>
         <p class="platform-contact__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <div class="platform-contact__form">
@@ -199,55 +208,58 @@
     </div>
 
     <footer class="platform-footer">
-      <div class="platform-footer__content">
-        <div class="platform-footer__left">
-          <a href="#" class="platform-footer__logo">LOGO</a>
-          <p class="platform-footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
-          <div class="platform-footerquote">@Lorem</div>
-        </div>
+      <div class="_container">
+        <div class="platform-footer__content">
+          <div class="platform-footer__left">
+            <a href="#" class="platform-footer__logo">LOGO</a>
+            <p class="platform-footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <div class="platform-footerquote">@Lorem</div>
+          </div>
 
-        <div class="platform-footer__about">
-          <a href="#" class="platform-footer__title">About us</a>
-          <ul class="platform-footer__list">
-            <li class="platform-footer__item">
-              <a href="#" class="platform-footer__item__link">Zeux</a>
+          <div class="platform-footer__about">
+            <a href="#" class="platform-footer__title">About us</a>
+            <ul class="platform-footer__list">
+              <li class="platform-footer__item">
+                <a href="#" class="platform-footer__item__link">Zeux</a>
+              </li>
+              <li class="platform-footer__item">
+                <a href="#" class="platform-footer__item__link">Portfolio</a>
+              </li>
+              <li class="platform-footer__item">
+                <a href="#" class="platform-footer__item__link">Careers</a>
+              </li>
+              <li class="platform-footer__item">
+                <a href="#" class="platform-footer__item__link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="platform-footer__contact">
+            <a href="contact-us.html" class="platform-footer__title">Contact us</a>
+            <p class="platform-footer__text platform-footer__contact-text">Lorem Ipsum is simply dummy text of the
+              printing
+              and typesetting industry.</p>
+            <a href="#" class="platform-footer__num">+908 89097 890</a>
+          </div>
+
+
+          <ul class="platform-footer__links">
+            <li class="platform-footer__links-item">
+              <a href="#" class="platform-footer__link"><img src="img/facebook.svg" alt="facebook"></a>
             </li>
-            <li class="platform-footer__item">
-              <a href="#" class="platform-footer__item__link">Portfolio</a>
+            <li class="platform-footer__links-item">
+              <a href="#" class="platform-footer__link"><img src="img/insta.svg" alt="instagram"></a>
             </li>
-            <li class="platform-footer__item">
-              <a href="#" class="platform-footer__item__link">Careers</a>
+            <li class="platform-footer__links-item">
+              <a href="#" class="platform-footer__link facebook"><img src="img/twitter.svg" alt="twitter"></a>
             </li>
-            <li class="platform-footer__item">
-              <a href="#" class="platform-footer__item__link">Contact us</a>
+            <li class="platform-footer__links-item">
+              <a href="#" class="platform-footer__link"><img src="img/linkedin.svg" alt="linkedin"></a>
             </li>
           </ul>
         </div>
 
-        <div class="platform-footer__contact">
-          <a href="contact-us.html" class="platform-footer__title">Contact us</a>
-          <p class="platform-footer__text platform-footer__contact-text">Lorem Ipsum is simply dummy text of the
-            printing
-            and typesetting industry.</p>
-          <a href="#" class="platform-footer__num">+908 89097 890</a>
-        </div>
-
-
-        <ul class="platform-footer__links">
-          <li class="platform-footer__links-item">
-            <a href="#" class="platform-footer__link"><img src="img/facebook.svg" alt="facebook"></a>
-          </li>
-          <li class="platform-footer__links-item">
-            <a href="#" class="platform-footer__link"><img src="img/insta.svg" alt="instagram"></a>
-          </li>
-          <li class="platform-footer__links-item">
-            <a href="#" class="platform-footer__link facebook"><img src="img/twitter.svg" alt="twitter"></a>
-          </li>
-          <li class="platform-footer__links-item">
-            <a href="#" class="platform-footer__link"><img src="img/linkedin.svg" alt="linkedin"></a>
-          </li>
-        </ul>
       </div>
 
       <div class="platform-footer__copyr">
@@ -255,6 +267,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="script/main.js"></script>
 </body>
 
 </html>

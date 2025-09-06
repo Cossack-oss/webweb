@@ -12,22 +12,24 @@
 
 <body>
   <div class="wrapper"> <!-- Градиент -->
-    <header class="container">
-
-      <div class="eyes">
-        <button class="menu-btn">☰</button> <!-- кнопка гамбургер -->
+    <header class="container header__container">
+      <div class="_container header-container">
         <span class="logo"> logo </span>
-      </div>
 
-      <nav>
-        <ul>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="about-us.html">About us</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="news.html">News</a></li>
-          <li class="btn"><a href="contact-us.html">Contacts</a></li>
-        </ul>
-      </nav>
+        <nav class="nav">
+          <ul class="header__list">
+            <li class="active"><a>Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="news.html">News</a></li>
+            <li class="btn"><a href="contact-us.html">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
     </header>
 
     <div class="hero-container">
@@ -83,38 +85,38 @@
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s,</p>
     </div>
-    <div class = "shadow-container">
-      <h3 class = "shadow-text">Our platforms</h3>
+    <div class="shadow-container">
+      <h3 class="shadow-text">Our platforms</h3>
     </div>
     <div class="images-container">
       <div class="block">
         <img src="img/one.png" alt="">
-        <p>Mobile Game Development</p> <span class= "shadow-page">Mobile Dev</span>
+        <p>Mobile Game Development</p> <span class="shadow-page">Mobile Dev</span>
         <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/two.png" alt="">
-        <p>PC Game Development</p> <span class= "shadow-page">PC Game Dev</span>
+        <p>PC Game Development</p> <span class="shadow-page">PC Game Dev</span>
         <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/three.png" alt="">
-        <p>PS4 Game Development</p> <span class= "shadow-page">PS4 Game Dev</span>
+        <p>PS4 Game Development</p> <span class="shadow-page">PS4 Game Dev</span>
         <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/four.png" alt="">
-        <p>AR/VR Solutions</p> <span class= "shadow-page">AR/VR Solutionsv</span>
+        <p>AR/VR Solutions</p> <span class="shadow-page">AR/VR Solutionsv</span>
         <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/five.png" alt="">
-        <p>AR/ VR design</p> <span class= "shadow-page">AR/ VR design</span>
+        <p>AR/ VR design</p> <span class="shadow-page">AR/ VR design</span>
         <img class="arrow" src="img/arrow.png" alt="">
       </div>
       <div class="block">
         <img src="img/six.png" alt="">
-        <p>3D Modelings</p> <span class= "shadow-page">3D Modelings</span>
+        <p>3D Modelings</p> <span class="shadow-page">3D Modelings</span>
         <img class="arrow" src="img/arrow.png" alt="">
       </div>
     </div>
@@ -139,19 +141,20 @@
 
 
     <div class="lower-info">
-      <h1>Lorem Ipsum</h1> <h3>Stay in the loop</h3>
+      <h1>Lorem Ipsum</h1>
+      <h3>Stay in the loop</h3>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-      <input id = "EmailField" type="email" placeholder="Enter email address">
+      <input id="EmailField" type="email" placeholder="Enter email address">
       <button onclick="CheckEmail()" type="submit">Continue</button>
     </div>
     <div class="lower-container">
       <div class="lower-text">
         <h1>Stay in the loop</h1>
         <p>Subscribe to receive the latest news and updates about TDA.
-          We promise not to spam you! </p>  
+          We promise not to spam you! </p>
       </div>
       <div class="email-container">
-        <input id = "EmailField" type="email" placeholder="Enter email address">
+        <input id="EmailField" type="email" placeholder="Enter email address">
         <button onclick="CheckEmail()" type="submit">Continue</button>
       </div>
     </div>
@@ -162,7 +165,7 @@
       <div class="logo">
         <h1>LOGO</h1>
         <p class="foot-logo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-        <p class ="dog-logo">@Logo</p>
+        <p class="dog-logo">@Logo</p>
       </div>
       <div class="about">
         <h4>About us</h4>
@@ -184,7 +187,7 @@
     <p>Copyright ® 2021 Lorem All rights Rcerved</p>
   </footer>
 
-
+  <script src="script/main.js"></script>
 </body>
 
 </html>
